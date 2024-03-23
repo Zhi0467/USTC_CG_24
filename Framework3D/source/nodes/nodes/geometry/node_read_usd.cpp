@@ -25,7 +25,7 @@ static void node_exec(ExeParams params)
 {
     auto file_name = params.get_input<std::string>("File Name");
     auto prim_path = params.get_input<std::string>("Prim Path");
-
+    std::cout << file_name << std::endl;
     GOperandBase geometry;
     std::shared_ptr<MeshComponent> mesh = std::make_shared<MeshComponent>(&geometry);
     geometry.attach_component(mesh);
@@ -36,7 +36,7 @@ static void node_exec(ExeParams params)
         time = pxr::UsdTimeCode::Default();
     }
 
-    auto stage = pxr::UsdStage::Open(file_name);
+    auto stage = pxr::UsdStage::Open(file_name.c_str());
 
     if (stage) {
         // Here 'c_str' call is necessary since prim_path
