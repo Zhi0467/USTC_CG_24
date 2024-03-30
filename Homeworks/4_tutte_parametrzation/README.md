@@ -1,4 +1,4 @@
-# 3. 曲面参数化 Tutte Parameterzation
+# 4. 曲面参数化 Tutte Parameterzation
 
 > 作业步骤：
 > - 查看[文档](documents/README.md)，内含多个小教程，请先阅读 [documents/README.md](documents/README.md)，其中包含了所有文档的阅读引导
